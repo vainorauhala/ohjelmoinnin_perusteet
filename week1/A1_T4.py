@@ -1,0 +1,9 @@
+num1 = 47
+num2 = 102
+Sum = num1 + num2
+Diff = num2 - num1
+Product= Sum * Diff
+print(f"{num1} + {num2} = {Sum}")
+print(f"{num2} - {num1} = {Diff}")
+print(f"{Sum} * {Diff} = {Product}")
+print(f"({num1} + {num2} ) * ( {num2}-{num1} ) = {Product}")
