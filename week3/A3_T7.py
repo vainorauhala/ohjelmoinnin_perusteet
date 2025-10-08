@@ -20,26 +20,43 @@
 #Other possible output variats:
 
 #“Unknown option.”
-#Example program runs
 
-#run 1 run 2 run 3 run 4 run 5 run 6
-#Program starting.
 print("Program starting.")
-#Testing decision structures.
-print("Testing decision structures.")
-#Insert an integer: 250
-integer = int(input("Insert an integer: "))
-#Options:
-print("Options:")
-#1 - In one multi-branched decision
-print("1 - In one multi-branched decision")
-#2 - In multiple independent if-statements
-print("2 - In multiple independent if-statements")
-#0 - Exit
-print("0 - Exit")
-#Your choice: 1
-choice = int(input("Your choice: "))
-#Using one multi-branched decision structure.
-#Result is 272
 
-#Program ending.
+print("Testing decision structures.")
+
+Feed = input("Insert an integer: ")
+Value = int(Feed)
+
+print("Options:")
+
+print("1 - In one multi-branched decision")
+
+print("2 - In multiple independent if-statements")
+
+print("0 - Exit")
+
+Feed = input("Your choise: ")
+choice = int(Feed)
+if (choice == 1):
+    print("using one multi-branched decision structure:")
+    if (Value >= 400):
+        Value += 44
+    elif (Value >= 200):
+        Value += 22
+    elif (Value >= 10):
+        Value += 11
+    print(f"Result is {Value}")
+elif choice == 2:
+    if (Value >= 400):
+        Value += 44
+    if (Value >= 200):
+        Value += 22
+    if (Value >= 100):
+        Value += 11
+    print(f"Result is {Value}")
+elif choice == 3:
+    print("Exiting...")
+else:
+    print("Unknown option")
+print("/nProgram ending.")
